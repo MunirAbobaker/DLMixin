@@ -48,8 +48,7 @@ class CasualSelfAttention(nn.Module):
         y = y.transpose(1, 2).contiguous().view(B, T, C)    
         return y
     
-    # feed forward network
-    
+# feed forward network    
 class MLP(nn.Module):
 
     def __init__(self, config):
